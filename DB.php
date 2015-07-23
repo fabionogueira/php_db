@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * MVC.php
+ * @author Fábio Nogueira
+ * @version 0.0.1
+ */
+
 require_once __DIR__.'/Recordset.php';
 
 class DB {
@@ -13,7 +19,7 @@ class DB {
     public static $FETCH_ROW = 'row';
     public static $FETCH_TABLE = 'table';
     
-    function __construct($config=array()) {
+    function __construct($config) {
         $this->_config = $config;
     }
     
